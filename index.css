@@ -1,0 +1,21 @@
+body {
+    background-color: lawngreen;
+    padding-top: 50px;
+}
+
+h1 {
+    color: magenta;
+    font-family: fantasy;
+    font-size: 100%;
+}
+
+.keret {
+    border-style: solid;
+    border-color: green;
+    border-radius: 20px;
+    border-width: 40px;
+    background-color: aqua;
+    width: 50%;
+    height: auto;
+    margin: auto;
+}
