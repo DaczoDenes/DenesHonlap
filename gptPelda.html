@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random User Picture</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        img {
+            border-radius: 50%;
+            border: 5px solid #333;
+            width: 150px;
+            height: 150px;
+        }
+    </style>
+</head>
+<body>
+
+    <img id="userPicture" alt="Random User Picture">
+
+    <script>
+        // Fetch a random user's picture and display it
+        fetch('https://randomuser.me/api/')
+            .then(response => response.json())
+            .then(data => {
+                const user = data.results[0];
+                const userPicture = document.getElementById('userPicture');
+                userPicture.src = user.picture.large;
+            })
+            .catch(error => {
+                console.error('Error fetching user data:', error);
+            });
+    </script>
+
+</body>
+</html>
