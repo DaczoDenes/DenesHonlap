@@ -23,3 +23,19 @@ h1 {
     margin: auto;
     position: relative;
 }
+
+.keret button {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    width: 20%;
+    height: 10%;
+    border: none;
+}
+.dot {
+    height: 100%;
+    padding-left: 25%;
+    background-color: black;
+    border-radius: 50%;
+    display: inline-block;
+  }
