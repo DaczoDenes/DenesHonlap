@@ -30,12 +30,5 @@ h1 {
     left: 40%;
     width: 20%;
     height: 10%;
-    border: none;
+    border-radius: 2000px;
 }
-.dot {
-    height: 100%;
-    padding-left: 25%;
-    background-color: black;
-    border-radius: 50%;
-    display: inline-block;
-  }
