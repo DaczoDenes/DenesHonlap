@@ -14,19 +14,8 @@ body {
     padding-top: 50px;
 }
 
-h1 {
-    color: black;
-    font-family: fantasy;
-    font-size: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-}
-
-.keret {
-    padding-top: 25%;
+.mainBox {
+    padding-top: 34%;
     border-radius: 20px;
     background-color: white;
     width: 50%;
@@ -35,11 +24,27 @@ h1 {
     position: relative;
 }
 
-.keret button {
+#left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40%;
+    height: 100%;
+}
+
+#right {
+    position: absolute;
+    top: 0;
+    left: 40%;
+    width: 60%;
+    height: 100%;
+}
+
+.mainBox button {
     position: absolute;
     top: 50%;
-    left: 40%;
-    width: 20%;
+    left: 25%;
+    width: 50%;
     height: 10%;
     border-radius: 2000px;
     border: none;
