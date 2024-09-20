@@ -16,7 +16,7 @@ body {
 
 .mainBox {
     padding-top: 34%;
-    border-radius: 20px;
+    border-radius: 26px;
     background-color: white;
     width: 50%;
     height: auto;
@@ -30,6 +30,8 @@ body {
     left: 0;
     width: 40%;
     height: 100%;
+    padding: 13px;
+    box-sizing: border-box;
 }
 
 #right {
@@ -38,7 +40,7 @@ body {
     left: 40%;
     width: 60%;
     height: 100%;
-    padding: 20px;
+    padding: 13px;
     box-sizing: border-box;
 }
 
@@ -57,12 +59,17 @@ body {
 #imgContainer {
     height: 100%;
     width: 100%;
-    background-color: aqua;
     overflow: hidden;
-    border-radius: 20px;
+    border-radius: 13px;
 }
 
 #Julio {
     margin: 0 0 0 -30%;
     height: 100%;
+}
+
+#logo {
+    background-color: black;
+    width: 20%;
+    padding-top: 25%;
 }
