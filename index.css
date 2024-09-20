@@ -38,6 +38,8 @@ body {
     left: 40%;
     width: 60%;
     height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 .mainBox button {
@@ -50,4 +52,17 @@ body {
     border: none;
     background-color: #36BF4A;
     color: white;
+}
+
+#imgContainer {
+    height: 100%;
+    width: 100%;
+    background-color: aqua;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+#Julio {
+    margin: 0 0 0 -30%;
+    height: 100%;
 }
