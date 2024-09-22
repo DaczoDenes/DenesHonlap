@@ -10,13 +10,14 @@ b           black
 */
 body {
     background-color: #bf3636;
+    padding-top: 2%;
 }
 
 .mainBox {
     padding-top: 56%;
     border-radius: 26px;
     background-color: white;
-    width: 80%;
+    width: 96%;
     height: auto;
     margin: auto;
     position: relative;
