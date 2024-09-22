@@ -1,24 +1,22 @@
 /*
 COLORS:
-brightest:  #44F24F
-bright:     #36BF4A
-dark:       #14732B
-darkest:    #01260A
+White:      #F2ECE9
+brightest:  #03A696
+bright:     #038C8C
+dark:       #026873
+darkest:    #093640
 b           black
 
 */
-
-
 body {
-    background-color: black;
-    padding-top: 50px;
+    background-color: #bf3636;
 }
 
 .mainBox {
-    padding-top: 34%;
+    padding-top: 56%;
     border-radius: 26px;
     background-color: white;
-    width: 50%;
+    width: 80%;
     height: auto;
     margin: auto;
     position: relative;
@@ -30,8 +28,9 @@ body {
     left: 0;
     width: 40%;
     height: 100%;
-    padding: 13px;
+    padding: 26px;
     box-sizing: border-box;
+    background-color: palevioletred;
 }
 
 #right {
@@ -42,9 +41,10 @@ body {
     height: 100%;
     padding: 13px;
     box-sizing: border-box;
+    background-color: aqua;
 }
 
-.mainBox button {
+.buon {
     position: absolute;
     top: 50%;
     left: 25%;
@@ -61,6 +61,7 @@ body {
     width: 100%;
     overflow: hidden;
     border-radius: 13px;
+    background-color: #36BF4A;
 }
 
 #Julio {
@@ -69,7 +70,51 @@ body {
 }
 
 #logo {
-    background-color: black;
-    width: 20%;
-    padding-top: 25%;
+    width: 100%;
+    padding-top: 30%;
+    position: relative;
 }
+
+#logo img {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#logo p {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+@media only screen and (min-width: 768px){
+    body {
+        background-color: #36BF4A;
+    }
+
+    .mainBox {
+        border-radius: 26px;
+        width: 70%;
+        padding-top: 49%;
+    }
+}
+
+@media only screen and (min-width: 1000px){
+    
+    body {
+        background-color: #093640;
+        padding-top: 50px;
+    }
+    
+    .mainBox {
+        border-radius: 26px;
+        width: 50%;
+        padding-top: 35%;
+    }
+    
+    
+}
+
