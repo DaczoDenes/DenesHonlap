@@ -127,11 +127,12 @@ body {
   }
   #left {
     position: absolute;
+    display: block;
     top: 0;
     left: 0;
     width: 40%;
     height: 100%;
-    padding: 26px;
+    padding: 13px 0 13px 13px;
     box-sizing: border-box;
     background-color: palevioletred;
   }
@@ -164,21 +165,10 @@ body {
     width: 160%;
   }
   #logo {
-    width: 100%;
-    padding-top: 30%;
-    position: relative;
+    height: 13%;
   }
-  #logo img {
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
-  #logo p {
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
+  #denesText{
+    height: 13%;
   }
   #phoneInfo {
     display: none;
