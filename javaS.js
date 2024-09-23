@@ -17,13 +17,15 @@ function switchBackground(){
   }
   switch(x){
     case 0:
-      document.body.style.backgroundColor = "#14732B";
+      document.body.style.backgroundColor = "black";
+      document.body.style.backgroundImage = "url('')";
       break;
     case 1:
-      document.body.style.backgroundColor = "#01260A";
+      document.body.style.backgroundColor = "#093640";
       break;
     case 2:
-      document.body.style.backgroundColor = "black";
+      document.body.style.backgroundImage = "url('Julios yard.png')";
+      document.body.style.backgroundSize= "100% auto";
       break;
   }
 }
