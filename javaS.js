@@ -25,7 +25,7 @@ function switchBackground(){
       break;
     case 2:
       document.body.style.backgroundImage = "url('Julios yard.png')";
-      document.body.style.backgroundSize= "100% auto";
+      document.body.style.backgroundSize= "auto 300%";
       break;
   }
 }
