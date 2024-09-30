@@ -5,20 +5,121 @@
 
 body {
   background-color: black;
-  padding: 2% 4%;
+  padding: 4% 8%;
+  font-family: "Open Sans";
+  font-optical-sizing: auto;
+  font-weight: 500;
 }
-
 #content {
-  background-color: #f2ece9;
   max-width: 800px;
   width: 100%;
   height: 100%;
   margin: auto;
+  background-color: #f2ece9;
 }
 
 #topNav {
-  background-color: aqua;
   position: fixed;
-  width: 92%;
+  width: 84%;
   max-width: 800px;
+  padding-top: 10%;
+}
+@media only screen and (min-width: 952px) {
+  #topNav {
+    padding-top: 95px;
+  }
+}
+#topNav #brandBar {
+  background-color: #f2ece9;
+  width: 100%;
+  height: 67%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 1%;
+  box-sizing: border-box;
+  border-radius: 5000px;
+  box-shadow: 0 0 40px 0px black;
+}
+#topNav #brandBar .roundingL {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  padding-left: 7%;
+  border-radius: 28%;
+  background-color: #f2ece9;
+}
+#topNav #brandBar .roundingR {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  padding-left: 7%;
+  border-radius: 28%;
+  background-color: #f2ece9;
+}
+#topNav #brandBar #logo {
+  position: relative;
+  height: 100%;
+  border-radius: 20%;
+  z-index: 1001;
+}
+#topNav #brandBar #denesText {
+  position: absolute;
+  top: -10%;
+  height: 120%;
+  border-radius: 20%;
+  z-index: 1001;
+}
+#topNav #menuBar {
+  position: absolute;
+  top: 76%;
+  height: 30%;
+  width: 82%;
+  padding: 0 2%;
+  border-radius: 5000px;
+  background-color: #bab9b9;
+  box-shadow: 0 10px 30px -1px black;
+  box-sizing: border-box;
+}
+#topNav #menuBar a {
+  font-family: "Open Sans";
+  font-optical-sizing: auto;
+  font-weight: bold;
+  color: #5e5e5e;
+  text-decoration: none;
+  padding: 0 4%;
+  line-height: 170%;
+}
+#topNav #menuBar a:hover {
+  color: black;
+}
+#topNav #menuBar .choosen {
+  background-color: #f2ece9;
+  height: 100%;
+  width: 25%;
+  border-radius: 5000px;
+  display: inline-block;
+  margin: 0;
+  text-align: center;
+  margin-left: -3%;
+}
+#topNav #menuBar .choosen a {
+  color: black;
+}
+#topNav #handBar {
+  position: absolute;
+  top: 76%;
+  right: 0;
+  height: 30%;
+  width: 17%;
+  border-radius: 5000px;
+  background-color: #bab9b9;
+  box-shadow: 8px 10px 30px -1px black;
+  text-align: center;
+  font-weight: bold;
+  padding: 1px 0 0 0;
+  box-sizing: border-box;
+  color: #5e5e5e;
 }/*# sourceMappingURL=home.css.map */
