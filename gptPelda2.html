@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Smooth Horizontal Scroll with Mouse Wheel</title>
+    <title>Smooth Horizontal Scroll with Continuous Size Change</title>
     <style>
         /* Styling the container box */
         .scroll-container {
@@ -58,7 +58,7 @@
     </style>
 </head>
 <body>
-    <h2>Smooth Scroll Horizontally with Mouse Wheel</h2>
+    <h2>Smooth Scroll Horizontally with Continuous Size Change</h2>
 
     <!-- The scrollable box -->
     <div class="scroll-container" id="scrollableBox">
@@ -82,6 +82,18 @@
         const scrollableBox = document.getElementById('scrollableBox');
         const boxes = document.querySelectorAll('.box');
 
+        // Function to update box sizes based on scroll position
+        function updateBoxSizes() {
+            const scrollLeft = scrollableBox.scrollLeft; // Get current scroll position
+            boxes.forEach(box => {
+                const boxOffsetLeft = box.offsetLeft; // Get the box's left offset
+                const distance = Math.abs(boxOffsetLeft - scrollLeft); // Calculate distance from the scroll position
+                const size = Math.max(50, 120 - (distance / 5)); // Size decreases with distance from center
+                box.style.width = size + 'px'; // Update box width
+                box.style.height = size + 'px'; // Update box height
+            });
+        }
+
         // Add an event listener for the mouse wheel
         scrollableBox.addEventListener('wheel', function(event) {
             // Prevent the default vertical scroll behavior
@@ -90,18 +102,14 @@
             // Scroll horizontally with smooth effect
             scrollableBox.scrollLeft += event.deltaY * 2; // Adjust speed by multiplying deltaY
 
-            // Change box sizes based on scroll position
-            const scrollLeft = scrollableBox.scrollLeft;
-            
-            boxes.forEach(box => {
-                const boxOffsetLeft = box.offsetLeft; // Get the box's left offset
-                const distance = Math.abs(boxOffsetLeft - scrollLeft); // Calculate distance from the scroll position
-                const size = Math.max(50, 120 - (distance / 5)); // Size decreases with distance from center
-                box.style.width = size + 'px'; // Update box width
-                box.style.height = size + 'px'; // Update box height
-            });
+            // Start the animation loop
+            requestAnimationFrame(updateBoxSizes);
         });
-        
+
+        // Continuous update when scrolling
+        scrollableBox.addEventListener('scroll', () => {
+            requestAnimationFrame(updateBoxSizes);
+        });
     </script>
 
 </body>

@@ -3,6 +3,23 @@
   margin: 0;
 }
 
+.button {
+  background-color: #03A696;
+  color: #f2ece9;
+  text-decoration: none;
+  font-weight: 650;
+  padding: 1% 2%;
+  border-radius: 5000px;
+  margin: 0 2%;
+  transition: 0.2s;
+  border: solid #03A696;
+}
+
+.button:hover {
+  background-color: #f2ece9;
+  color: #03A696;
+}
+
 body {
   background-color: black;
   padding: 0 8%;
@@ -116,6 +133,7 @@ body #gradient {
   text-decoration: none;
   padding: 0 4%;
   line-height: 170%;
+  transition: 0.2s;
 }
 #topNav #menuBar a:hover {
   color: black;
@@ -157,4 +175,58 @@ body #gradient {
   margin: 100% auto 0 auto;
   padding: 2%;
   border-radius: 3%;
+}
+#AboutBlock p {
+  padding: 2%;
+}
+#AboutBlock h2 {
+  text-align: center;
+  margin-bottom: -3%;
+  pointer-events: none;
+}
+#AboutBlock #scrollBox {
+  -ms-overflow-style: none; /* For Internet Explorer and Edge */
+  scrollbar-width: none; /* For Firefox */
+  width: 60%;
+  left: 20%;
+  height: 30%;
+  overflow-x: scroll;
+  padding-top: 8%;
+  white-space: nowrap;
+  font-size: 0;
+  position: absolute;
+}
+#AboutBlock #scrollBox .box {
+  font-size: 8px;
+  display: inline-block;
+  height: 70%;
+  width: 33.3%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+#AboutBlock #scrollBox .box img {
+  width: 100%;
+  border-radius: 10%;
+}
+#AboutBlock #scrollBox .box #julio {
+  height: 100%;
+}
+#AboutBlock #scrollBox #midLine {
+  display: block;
+  font-size: large;
+  position: absolute;
+}
+#AboutBlock #scrollBox::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, and other WebKit-based browsers */
+}
+#AboutBlock #offer {
+  position: absolute;
+  bottom: 5%;
+  width: 70%;
+  left: 15%;
+  text-align: center;
+}
+#AboutBlock #offer .button {
+  padding: 2% 4%;
+  display: inline-block;
 }/*# sourceMappingURL=home.css.map */
