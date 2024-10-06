@@ -67,14 +67,20 @@
             });
             if (scrollBox.scrollLeft > ((134)*7)){
                 scrollBox.scrollLeft = 134;
+                boxes.forEach(box => {
+                //box.innerHTML = (box.offsetLeft) +" - " + scrollBox.scrollLeft + "<br><br>" + (box.offsetLeft-scrollBox.scrollLeft-134);
                 box.style.scale = 1 - Math.pow((box.offsetLeft-scrollBox.scrollLeft-134)/134,2)/2;
                 box.style.opacity = 1 - Math.pow((box.offsetLeft-scrollBox.scrollLeft-134)/134,4)/2
+            });
 
             }
             if (scrollBox.scrollLeft < 1){
                 scrollBox.scrollLeft = 134*6;
+                boxes.forEach(box => {
+                //box.innerHTML = (box.offsetLeft) +" - " + scrollBox.scrollLeft + "<br><br>" + (box.offsetLeft-scrollBox.scrollLeft-134);
                 box.style.scale = 1 - Math.pow((box.offsetLeft-scrollBox.scrollLeft-134)/134,2)/2;
                 box.style.opacity = 1 - Math.pow((box.offsetLeft-scrollBox.scrollLeft-134)/134,4)/2
+            });
             }
         }
         
