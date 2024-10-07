@@ -31,6 +31,7 @@ body {
     font-family: "Open Sans";
     font-optical-sizing: auto;
     font-weight: 500;
+    overflow-x: hidden;
 
     #BackgImg {
         width: 150%;
@@ -240,5 +241,20 @@ body {
             padding: 2% 4%;
             display: inline-block;
         }
+    }
+}
+
+#menuBar {
+    display: none;
+}
+#handBar {
+    display: none;
+}
+@media only screen and (min-width: 570px){
+    #menuBar {
+        display:block;
+    }
+    #handBar {
+        display: inline-block;
     }
 }
